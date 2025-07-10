@@ -21,6 +21,10 @@ sns.barplot(data=data,x="Product" , y="Sales")
 plt.title=("Sales by category")
 plt.show()
 
+ Calculate ROI in %
+roi_df['ROI (%)'] = (roi_df['Profit'] / roi_df['Marketing']) * 100
+print(roi_df)
+
 #Profit by State
 plt.figure(figsize=(10,5))
 sns.barplot(data=data,x='State',y='Profit')
